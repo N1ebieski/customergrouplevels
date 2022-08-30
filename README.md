@@ -2,7 +2,7 @@
 
 Prestashop module for assigning group levels to users depending on product categories. It allows you to set different prices for products to various users depending on their groups in specific categories.
 
-# Tests
+## Tests
 
 Integration tests:
 
