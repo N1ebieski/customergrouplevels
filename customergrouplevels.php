@@ -17,11 +17,11 @@
 
 declare(strict_types=1);
 
-use N1ebieski\CustomerGroupLevels\Entity\CustomerGroupCategory\CustomerGroupCategory;
-use N1ebieski\CustomerGroupLevels\Form\Type\Admin\Customer\CategoryType;
-use N1ebieski\CustomerGroupLevels\Repository\CustomerGroupCategory\CustomerGroupCategoryRepository;
-use N1ebieski\CustomerGroupLevels\Service\CustomerGroupCategory\CustomerGroupCategoryService;
 use Symfony\Component\Form\FormBuilderInterface;
+use N1ebieski\CustomerGroupLevels\Form\Type\Admin\Customer\CategoryType;
+use N1ebieski\CustomerGroupLevels\Entity\CustomerGroupCategory\CustomerGroupCategory;
+use N1ebieski\CustomerGroupLevels\Service\CustomerGroupCategory\CustomerGroupCategoryService;
+use N1ebieski\CustomerGroupLevels\Repository\CustomerGroupCategory\CustomerGroupCategoryRepository;
 
 if (!defined('_PS_VERSION_')) {
     exit;
@@ -102,7 +102,7 @@ class CustomerGroupLevels extends Module
 
     public function hookActionAdminControllerSetMedia($params)
     {
-        $this->context->controller->addJS($this->_path . 'public/js/admin/scripts.js');
+        $this->context->controller->addJS($this->_path . 'views/js/admin/scripts.js');
     }
 
     public function hookActionCustomerFormBuilderModifier(array $params)

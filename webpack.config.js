@@ -9,10 +9,10 @@ module.exports = {
       }
     },
     entry: {
-      'js/admin/scripts.js': glob.sync('./resources/js/admin/scripts/**/*.js')
+      'js/admin/scripts.js': glob.sync('./assets/js/admin/scripts/**/*.js')
     },
     output: {
       filename: '[name]',
-      path: path.resolve(__dirname, 'public')
+      path: path.resolve(__dirname, 'views')
     }
 };
