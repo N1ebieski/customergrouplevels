@@ -29,7 +29,7 @@
     },
     "scripts": {
         "header-stamp": [
-            "../../vendor/bin/header-stamp --license=resources/license.txt --exclude=vendor,node_modules,public --extensions=\"php,js,css,scss,tpl,html.twig,vue\""
+            "../../vendor/bin/header-stamp --license=assets/license.txt --exclude=vendor,node_modules,views/js --extensions=\"php,js,css,scss,tpl,html.twig,vue\""
         ],
         "phpstan": [
             "../../vendor/bin/phpstan analyse --configuration=phpstan.neon.dist > ../../var/logs/phpstan.log"
