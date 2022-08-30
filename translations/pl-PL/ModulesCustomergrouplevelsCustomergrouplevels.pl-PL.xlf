@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin-dev" source-language="pl-PL" target-language="pl-PL" datatype="plaintext">
+    <body>
+      <trans-unit id="ae3c488c2810c5825e30679807f3981f">
+        <source>Customer Group Levels</source>
+        <target>Poziomy grup klientów</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="54965dbd7739b41f09a476a8b53c51f6">
+        <source>Prestashop module for assigning group levels to users depending on product categories</source>
+        <target>Moduł Prestashop do przydzielania użytkownikom poziomów grup w zależności od kategorii produktu</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5ec3ea356fc40ac545ed097c16f563cc">
+        <source>Prestashop module for assigning group levels to users depending on product categories. It allows you to set different prices for products to various users depending on their groups in specific categories</source>
+        <target>Moduł Prestashop do przydzielania użytkownikom poziomów grup w zależności od kategorii. Pozwala na ustalanie różnych cen produktów różnym użytkownikom w zależności od posiadanych przez nich grup w określonych kategoriach</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

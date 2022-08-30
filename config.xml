@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>customergrouplevels</name>
+    <displayName><![CDATA[Customer Group Levels]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Prestashop module for assigning group levels to users depending on product categories]]></description>
+    <author><![CDATA[Mariusz Wysokiński]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

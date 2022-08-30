@@ -1,0 +1,53 @@
+{
+    "name": "n1ebieski/customergrouplevels",
+    "description": "Description",
+    "authors": [
+        {
+            "name": "Mariusz Wysokiński",
+            "email": "kontakt@intelekt.net.pl"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3"
+    },
+    "require-dev": {
+        "prestashop/php-dev-tools": "^4.1",
+        "phpstan/phpstan": "^0.12.48",
+        "prestashop/phpstan-prestashop": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "N1ebieski\\CustomerGroupLevels\\": "src/"
+        },
+        "classmap": [],
+        "exclude-from-classmap": []
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "N1ebieski\\CustomerGroupLevels\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "header-stamp": [
+            "../../vendor/bin/header-stamp --license=resources/license.txt --exclude=vendor,node_modules,public --extensions=\"php,js,css,scss,tpl,html.twig,vue\""
+        ],
+        "phpstan": [
+            "../../vendor/bin/phpstan analyse --configuration=phpstan.neon.dist > ../../var/logs/phpstan.log"
+        ],
+        "phpunit": [
+            "../../vendor/phpunit/phpunit/phpunit -c ../../tests/Integration/phpunit.xml . > ../../var/logs/phpunit.log"
+        ],
+        "phpcsfixer": [
+            "../../vendor/bin/php-cs-fixer fix ."
+        ],
+        "autoindex": [
+            "../../vendor/bin/autoindex prestashop:add:index ."
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "prepend-autoloader": false
+    },
+    "minimum-stability": "dev",
+    "type": "prestashop-module"
+}
