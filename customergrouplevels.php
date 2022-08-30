@@ -100,12 +100,12 @@ class CustomerGroupLevels extends Module
         return $result && parent::uninstall();
     }
 
-    public function hookActionAdminControllerSetMedia($params)
+    public function hookActionAdminControllerSetMedia($params): void
     {
         $this->context->controller->addJS($this->_path . 'views/js/admin/scripts.js');
     }
 
-    public function hookActionCustomerFormBuilderModifier(array $params)
+    public function hookActionCustomerFormBuilderModifier(array $params): void
     {
         /**
          * @var Cookie
@@ -147,7 +147,7 @@ class CustomerGroupLevels extends Module
         ]);
     }
 
-    public function hookActionAfterCreateCustomerFormHandler(array $params)
+    public function hookActionAfterCreateCustomerFormHandler(array $params): void
     {
         /**
          * @var Cookie
@@ -183,7 +183,7 @@ class CustomerGroupLevels extends Module
         }
     }
 
-    public function hookActionAfterUpdateCustomerFormHandler(array $params)
+    public function hookActionAfterUpdateCustomerFormHandler(array $params): void
     {
         /**
          * @var Cookie
