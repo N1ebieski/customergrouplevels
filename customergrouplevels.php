@@ -112,7 +112,7 @@ class CustomerGroupLevels extends Module
          */
         $cookie = $params['cookie'];
 
-        $groups = Group::getGroups($cookie->id_lang);
+        $groups = Group::getGroups($cookie->id_lang, $this->context->shop->id);
 
         /**
          * @var CustomerGroupCategoryRepository
@@ -159,7 +159,7 @@ class CustomerGroupLevels extends Module
          */
         $customerGroupCategoryService = $this->get('n1ebieski.customergrouplevels.customergroupcategory_service');
 
-        $groups = Group::getGroups($cookie->id_lang);
+        $groups = Group::getGroups($cookie->id_lang, $this->context->shop->id);
 
         foreach ($groups as $group) {
             $categoryIds = $params['form_data']["group_id_{$group['id_group']}_category_ids"];
@@ -195,7 +195,7 @@ class CustomerGroupLevels extends Module
          */
         $customerGroupCategoryService = $this->get('n1ebieski.customergrouplevels.customergroupcategory_service');
 
-        $groups = Group::getGroups($cookie->id_lang);
+        $groups = Group::getGroups($cookie->id_lang, $this->context->shop->id);
 
         foreach ($groups as $group) {
             $categoryIds = $params['form_data']["group_id_{$group['id_group']}_category_ids"];

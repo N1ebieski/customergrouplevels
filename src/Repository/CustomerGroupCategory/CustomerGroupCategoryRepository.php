@@ -19,10 +19,10 @@ declare(strict_types=1);
 
 namespace N1ebieski\CustomerGroupLevels\Repository\CustomerGroupCategory;
 
-use Doctrine\ORM\EntityRepository;
-use Doctrine\ORM\ORMException;
-use Doctrine\ORM\Query\ResultSetMappingBuilder;
 use InvalidArgumentException;
+use Doctrine\ORM\ORMException;
+use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\Query\ResultSetMappingBuilder;
 use N1ebieski\CustomerGroupLevels\Entity\CustomerGroupCategory\CustomerGroupCategory;
 
 class CustomerGroupCategoryRepository extends EntityRepository
@@ -45,8 +45,10 @@ class CustomerGroupCategoryRepository extends EntityRepository
             'SELECT cgc.* FROM ' . _DB_PREFIX_ . 'customer_group_category cgc 
             INNER JOIN category_product cp 
                 ON cp.id_category = cgc.id_category 
-                WHERE cp.id_product = :id_product 
-                AND cgc.id_customer = :id_customer 
+            INNER JOIN specific_price sp
+                ON sp.id_group = cgc.id_group
+            WHERE cp.id_product = :id_product 
+            AND cgc.id_customer = :id_customer 
             ORDER BY cgc.id_group DESC 
             LIMIT 1',
             $rsm
