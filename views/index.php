@@ -15,7 +15,6 @@
  * @license   https://intelekt.net.pl/pages/regulamin
  */
 
-
 declare(strict_types=1);
 
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
